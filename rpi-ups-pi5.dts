@@ -1,0 +1,20 @@
+/dts-v1/;
+/plugin/;
+
+/{
+	compatible = "raspberrypi,5-model-b", "brcm,bcm2712";
+	
+	fragment@0 {
+		target = <&i2c_arm>;
+		__overlay__ {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			status = "okay";
+			ups: rpi_ups@41 {
+				compatible = "rpi,ups";
+				status = "okay";
+				reg = <0x41>;
+			};
+		};
+	};
+};
