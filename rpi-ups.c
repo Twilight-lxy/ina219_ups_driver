@@ -15,7 +15,7 @@
 #define INA219 (0x41 << 1) // INA219 I2C 地址
 #define DRIVER_NAME "UPS-Module-3S"
 #define DRIVER_MANUFACTURER "WaveShare"
-#define DESIGN_MAX_VOLTAGE_mV (4200)/* 单节锂电池满电电压 4.2V */
+#define DESIGN_MAX_VOLTAGE_mV (4100)/* 单节锂电池满电电压 4.1V */
 #define DESIGN_MIN_VOLTAGE_mV (3000)/* 单节锂电池低电压 3.0V */
 
 #define DATA_TIMEOUT_MS 5000            /* 5 seconds timeout */
